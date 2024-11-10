@@ -89,7 +89,7 @@ public class ScalingManager
     public double map(double sourceValue, double sourceMin, double sourceMax, double destMin, double destMax)
     {
         if (sourceMin == sourceMax)
-            throw new RuntimeException("Cannot map a point within a zero range - source min and max are both "+sourceMin+".");
+            throw new RuntimeException(STR."Cannot map a point within a zero range - source min and max are both \{sourceMin}.");
         return destMin + (destMax-destMin) * (sourceValue-sourceMin)/(sourceMax-sourceMin);
     }
 }
