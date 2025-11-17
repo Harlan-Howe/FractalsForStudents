@@ -1,6 +1,6 @@
 public class FractalRunner
 {
-    public  void main()
+    public static void main(String[] args)
     {
         FractalFrame app = new FractalFrame();
     }
